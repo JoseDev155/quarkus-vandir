@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario | Vandir System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Menú Lateral -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Vandir System</h2>
+                <p class="user-role">Gerente</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-section">Gestión</li>
+                <li><a href="gerente.html">📊 Resumen</a></li>
+                <li><a href="reportes.html">📈 Reportes de Ventas</a></li>
+                <li><a href="inventario.html" class="active">📋 Inventario Global</a></li>
+                <li><a href="compras.html">🛒 Órdenes de Compra</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="user-profile"><span>Hola, Laura (Gerencia)</span></div>
+                <button class="logout-btn" onclick="window.location.href='login.html'">Salir</button>
+            </header>
+
+            <section class="workspace">
+                <div class="workspace-header">
+                    <h2>Inventario Global</h2>
+                    <div class="search-panel" style="margin-bottom: 0;">
+                        <input type="text" placeholder="Buscar por código o nombre...">
+                        <button class="btn btn-primary">Buscar</button>
+                    </div>
+                </div>
+
+                <div class="content-panel">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Producto</th>
+                                <th>Categoría</th>
+                                <th>Stock Actual</th>
+                                <th>Estado</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A001</td>
+                                <td>Taladro Inalámbrico 20V</td>
+                                <td>Herramientas</td>
+                                <td>15</td>
+                                <td class="text-success font-bold">Óptimo</td>
+                                <td><button class="btn btn-small btn-secondary">Ajustar</button></td>
+                            </tr>
+                            <tr>
+                                <td>B015</td>
+                                <td>Martillo de Goma</td>
+                                <td>Manuales</td>
+                                <td>0</td>
+                                <td class="text-danger font-bold">Agotado</td>
+                                <td><button class="btn btn-small btn-primary">Solicitar</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

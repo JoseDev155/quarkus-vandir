@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Precios | Vandir System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Vandir System</h2>
+                <p class="user-role">Vendedor</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-section">Ventas</li>
+                <li><a href="vendedor.html">🛒 Nueva Venta</a></li>
+                <li><a href="consultar-precios.html" class="active">📦 Consultar Precios</a></li>
+                <li><a href="mis-clientes.html">👥 Mis Clientes</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div class="user-profile"><span>Hola, Carlos (Caja 1)</span></div>
+                <button class="logout-btn">Salir</button>
+            </header>
+
+            <section class="workspace">
+                <div class="workspace-header">
+                    <h2>Consulta de Inventario y Precios</h2>
+                </div>
+
+                <div class="content-panel" style="background: var(--white); padding: 20px; border-radius: 8px;">
+                    <div class="search-bar" style="margin-bottom: 20px; display: flex; gap: 10px;">
+                        <input type="text" placeholder="Ingresa el código o nombre del producto..." style="flex: 1; padding: 10px; border: 1px solid var(--border-color); border-radius: 4px;">
+                        <button class="btn btn-primary">Buscar</button>
+                    </div>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Descripción del Producto</th>
+                                <th>Categoría</th>
+                                <th>Stock Disponible</th>
+                                <th>Precio Unitario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A001</td>
+                                <td>Taladro Inalámbrico 20V</td>
+                                <td>Herramientas</td>
+                                <td class="font-bold text-success">15 unidades</td>
+                                <td class="font-bold">$120.00</td>
+                            </tr>
+                            <tr>
+                                <td>A002</td>
+                                <td>Set de Brocas (10 piezas)</td>
+                                <td>Accesorios</td>
+                                <td class="font-bold text-success">42 unidades</td>
+                                <td class="font-bold">$15.50</td>
+                            </tr>
+                            <tr>
+                                <td>B015</td>
+                                <td>Martillo de Goma</td>
+                                <td>Herramientas Manuales</td>
+                                <td class="font-bold text-danger">0 unidades (Agotado)</td>
+                                <td class="font-bold">$8.25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

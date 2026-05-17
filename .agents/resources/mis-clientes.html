@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Clientes | Vandir System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Vandir System</h2>
+                <p class="user-role">Vendedor</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-section">Ventas</li>
+                <li><a href="vendedor.html">🛒 Nueva Venta</a></li>
+                <li><a href="consultar-precios.html">📦 Consultar Precios</a></li>
+                <li><a href="mis-clientes.html" class="active">👥 Mis Clientes</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div class="user-profile"><span>Hola, Carlos (Caja 1)</span></div>
+                <button class="logout-btn">Salir</button>
+            </header>
+
+            <section class="workspace">
+                <div class="workspace-header">
+                    <h2>Directorio de Clientes</h2>
+                    <button class="btn btn-primary">+ Registrar Nuevo Cliente</button>
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre del Cliente</th>
+                            <th>Teléfono</th>
+                            <th>Correo Electrónico</th>
+                            <th>Última Compra</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Roberto Méndez</td>
+                            <td>+503 7000-1111</td>
+                            <td>roberto.m@email.com</td>
+                            <td>12/Mayo/2026</td>
+                            <td>
+                                <button class="btn btn-primary btn-small">Editar</button>
+                                <button class="btn btn-small" style="background: var(--border-color);">Historial</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ana Lucía Flores</td>
+                            <td>+503 6000-2222</td>
+                            <td>ana.flores@email.com</td>
+                            <td>05/Mayo/2026</td>
+                            <td>
+                                <button class="btn btn-primary btn-small">Editar</button>
+                                <button class="btn btn-small" style="background: var(--border-color);">Historial</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Constructora El Sol S.A. de C.V.</td>
+                            <td>+503 2222-3333</td>
+                            <td>compras@elsol.com</td>
+                            <td>Hoy</td>
+                            <td>
+                                <button class="btn btn-primary btn-small">Editar</button>
+                                <button class="btn btn-small" style="background: var(--border-color);">Historial</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

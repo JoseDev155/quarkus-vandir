@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Gerencial | Vandir System</title>
+    <!-- Ruta corregida hacia la carpeta css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <!-- Menú Lateral - Gerente -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Vandir System</h2>
+                <p class="user-role">Gerente</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-section">Gestión</li>
+                
+                <!-- Enlaces actualizados para la navegación entre pantallas -->
+                <li><a href="gerente.html" class="active">📊 Resumen</a></li>
+                <li><a href="reportes.html">📈 Reportes de Ventas</a></li>
+                <li><a href="inventario.html">📋 Inventario Global</a></li>
+                <li><a href="compras.html">🛒 Órdenes de Compra</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="user-profile"><span>Hola, Laura (Gerencia)</span></div>
+                <button class="logout-btn" onclick="window.location.href='login.html'">Salir</button>
+            </header>
+
+            <!-- Área de Trabajo: Estadísticas -->
+            <section class="workspace">
+                <h2>Resumen del Día</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Ventas Totales</h3>
+                        <p class="stat-number">$3,450.00</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Transacciones</h3>
+                        <p class="stat-number">42</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 style="color: var(--danger);">Alertas de Stock</h3>
+                        <p class="stat-number" style="color: var(--danger);">8 Productos</p>
+                    </div>
+                </div>
+
+                <h2>Últimas Ventas Realizadas</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID Venta</th>
+                            <th>Vendedor</th>
+                            <th>Total</th>
+                            <th>Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#10045</td>
+                            <td>Carlos</td>
+                            <td>$120.00</td>
+                            <td>14:30</td>
+                        </tr>
+                        <tr>
+                            <td>#10044</td>
+                            <td>María</td>
+                            <td>$45.50</td>
+                            <td>14:15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>

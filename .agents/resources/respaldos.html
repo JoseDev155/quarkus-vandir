@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respaldos | Vandir System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Menú Lateral -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Vandir System</h2>
+                <p class="user-role">Administrador</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-section">Sistema</li>
+                <li><a href="admin.html">🔐 Usuarios y Permisos</a></li>
+                <li><a href="configuracion.html">⚙️ Configuración General</a></li>
+                <li><a href="respaldos.html" class="active">💾 Respaldos de Base de Datos</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="user-profile"><span>Hola, Admin</span></div>
+                <button class="logout-btn" onclick="window.location.href='login.html'">Salir</button>
+            </header>
+
+            <section class="workspace">
+                <div class="workspace-header">
+                    <h2>Copias de Seguridad</h2>
+                    <button class="btn btn-primary">💾 Generar Nuevo Respaldo</button>
+                </div>
+
+                <div class="content-panel">
+                    <p style="margin-bottom: 20px; color: var(--text-muted);">El sistema realiza un respaldo automático cada viernes a las 23:00. Puedes descargar los respaldos anteriores desde esta tabla.</p>
+                    
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Nombre del Archivo</th>
+                                <th>Fecha y Hora</th>
+                                <th>Tamaño</th>
+                                <th>Tipo</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>backup_db_20260508.sql</td>
+                                <td>08/Mayo/2026 - 23:00</td>
+                                <td>14.5 MB</td>
+                                <td>Automático</td>
+                                <td>
+                                    <button class="btn btn-small btn-secondary">Descargar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>backup_db_20260501.sql</td>
+                                <td>01/Mayo/2026 - 23:00</td>
+                                <td>14.2 MB</td>
+                                <td>Automático</td>
+                                <td>
+                                    <button class="btn btn-small btn-secondary">Descargar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración | Vandir System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Menú Lateral -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Vandir System</h2>
+                <p class="user-role">Administrador</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-section">Sistema</li>
+                <li><a href="admin.html">🔐 Usuarios y Permisos</a></li>
+                <li><a href="configuracion.html" class="active">⚙️ Configuración General</a></li>
+                <li><a href="respaldos.html">💾 Respaldos de Base de Datos</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="user-profile"><span>Hola, Admin</span></div>
+                <button class="logout-btn" onclick="window.location.href='login.html'">Salir</button>
+            </header>
+
+            <section class="workspace">
+                <div class="workspace-header">
+                    <h2>Configuración del Sistema</h2>
+                </div>
+
+                <div class="content-panel" style="max-width: 600px;">
+                    <div class="input-group">
+                        <label>Nombre de la Empresa</label>
+                        <input type="text" value="Vandir Store S.A. de C.V.">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Teléfono de Contacto</label>
+                        <input type="text" value="+503 2222-0000">
+                    </div>
+
+                    <div style="display: flex; gap: 20px;">
+                        <div class="input-group" style="flex: 1;">
+                            <label>Impuesto IVA (%)</label>
+                            <input type="number" value="13">
+                        </div>
+                        <div class="input-group" style="flex: 1;">
+                            <label>Moneda Principal</label>
+                            <input type="text" value="USD ($)">
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" style="margin-top: 15px;">Guardar Cambios</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

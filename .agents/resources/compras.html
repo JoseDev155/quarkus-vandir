@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras | Vandir System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Menú Lateral -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Vandir System</h2>
+                <p class="user-role">Gerente</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-section">Gestión</li>
+                <li><a href="gerente.html">📊 Resumen</a></li>
+                <li><a href="reportes.html">📈 Reportes de Ventas</a></li>
+                <li><a href="inventario.html">📋 Inventario Global</a></li>
+                <li><a href="compras.html" class="active">🛒 Órdenes de Compra</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="user-profile"><span>Hola, Laura (Gerencia)</span></div>
+                <button class="logout-btn" onclick="window.location.href='login.html'">Salir</button>
+            </header>
+
+            <section class="workspace">
+                <div class="workspace-header">
+                    <h2>Órdenes a Proveedores</h2>
+                    <button class="btn btn-primary">+ Nueva Orden</button>
+                </div>
+
+                <div class="content-panel">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>No. Orden</th>
+                                <th>Proveedor</th>
+                                <th>Fecha Solicitud</th>
+                                <th>Monto Estimado</th>
+                                <th>Estatus</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ORD-9021</td>
+                                <td>Distribuidora Industrial S.A.</td>
+                                <td>10/Mayo/2026</td>
+                                <td>$1,200.00</td>
+                                <td style="color: var(--warning); font-weight: bold;">En Tránsito</td>
+                                <td><button class="btn btn-small btn-secondary">Revisar</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

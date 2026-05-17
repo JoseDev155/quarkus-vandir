@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "skills": {
+    "110-java-maven-best-practices": {
+      "source": "jabrena/cursor-rules-java",
+      "sourceType": "github",
+      "skillPath": "skills/110-java-maven-best-practices/SKILL.md",
+      "computedHash": "2276294b5d168da6616b32ae199a389ac914292ba8ac6614171daac7f9afd6a4"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "516bd2154eb843a8240e43d5b285229129853114ad7075a5e141e1c08e408c84"
+    },
+    "vitest-testing-patterns": {
+      "source": "erichowens/some_claude_skills",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vitest-testing-patterns/SKILL.md",
+      "computedHash": "3b1cbfed0898d8bef74c8e54eb14e12c9e4045e65acb1e5c5348a43b7ed1ef80"
+    },
+    "vue-component-generator": {
+      "source": "jeremylongshore/claude-code-plugins-plus-skills",
+      "sourceType": "github",
+      "skillPath": "planned-skills/generated/05-frontend-dev/vue-component-generator/SKILL.md",
+      "computedHash": "3e01e6582ed312f2a3632a28f66629bf6bc2e2c085a5ce3f0ea59515b110ad4d"
+    },
+    "vue-component-patterns": {
+      "source": "thebushidocollective/han",
+      "sourceType": "github",
+      "skillPath": "plugins/frameworks/vue/skills/vue-component-patterns/SKILL.md",
+      "computedHash": "20ae55e010d0bcef997e005c34ae0de67bd7b42c46c8650683b194804cf9d8c6"
+    }
+  }
+}
