@@ -140,14 +140,11 @@ CREATE TABLE ordenes_compra (
 INSERT INTO configuracion (nombre_empresa, telefono_contacto, impuesto_iva, moneda) 
 VALUES ('Vandir Store S.A. de C.V.', '+503 2222-0000', 13.00, 'USD ($)');
 
--- 2. Insertar usuarios de prueba (Contraseñas encriptadas con Bcrypt)
--- admin@vandir.com / admin123
--- gerente@vandir.com / gerente123
--- vendedor@vandir.com / vendedor123
+-- 2. Insertar usuarios de prueba (Nota: En producción, el password debe estar hasheado)
 INSERT INTO usuarios (nombre, email, password, rol) VALUES 
-('Administrador Principal', 'admin@vandir.com', '$2a$10$/K6cn6XrgLYy0yXkd2xIhesb65A5B4u0/DrM1gMSFfeC0D06MIGba', 'Administrador'),
-('Laura Mendez', 'gerente@vandir.com', '$2a$10$EwqJ0nHSEXqrGskIgU0b2.6xzbV781AASTyNblothXy75/Z7WnQcG', 'Gerente'),
-('Carlos Perez', 'vendedor@vandir.com', '$2a$10$rkikdHihlnYwP.hlHg/3NO2UpKHurdqDQMbFj1nSj7bsew1NKa5fW', 'Vendedor');
+('Administrador Principal', 'admin@vandir.com', 'admin123', 'Administrador'),
+('Laura Mendez', 'gerente@vandir.com', 'gerente123', 'Gerente'),
+('Carlos Perez', 'vendedor@vandir.com', 'vendedor123', 'Vendedor');
 
 -- 3. Insertar algunas categorías y productos iniciales
 INSERT INTO categorias (nombre, descripcion) VALUES 
