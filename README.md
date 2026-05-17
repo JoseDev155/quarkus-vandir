@@ -13,4 +13,4 @@ Sistema de inventario para tiendita, de la asignatura Sistemas Informáticos "A"
 ## Índice del Repositorio
 
 * [Indicaciones para el Backend - API](./backend/README-api.md)
-* [Indicaciones para el Frontend](./frontend/README-frontend.md)
+* [Indicaciones para el Frontend](./frontend/README-vue.md)
